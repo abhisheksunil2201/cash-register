@@ -1,0 +1,108 @@
+html {
+  background-color: white;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+.main-container {
+  width: 80%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  margin-top: 30px;
+}
+.description {
+  font-size: 15px;
+}
+.input,
+.bill,
+.cash {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.next {
+  margin: 10px auto;
+  padding: 5px;
+}
+.btn {
+  height: 35px;
+}
+.btn,
+.next {
+  width: 60px;
+  background-color: #1f9bd4;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.input {
+  width: 400px;
+}
+table,
+th,
+td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+.notes,
+.heading,
+.table {
+  background-color: #1f9bd4;
+  color: white;
+  padding: 25px;
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+.result td {
+  padding: 20px 10px;
+}
+.bill-input,
+.cash-input {
+  width: 200px;
+  padding: 5px;
+}
+.bill-warning,
+.warning {
+  font-weight: bold;
+  color: #1f9bd4;
+  margin-top: 10px;
+}
+@media screen and (max-width: 450px) {
+  .main-container {
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .result td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  table,
+  th,
+  td {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 10px;
+  }
+}

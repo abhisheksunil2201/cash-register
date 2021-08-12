@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-heading">
+            <h1 class="heading">Cash Register</h1>
+            <p class="description">Cash Register helps in returning the money to the customer by entering the bill amount and the cash amount given by the customer.</p>
+        </div>
+         <div class="input">
+            <label class="bill">
+                Bill Amount:
+                <input type="number" class="bill-input"/>
+                <button class="next"type="submit">Next</button>
+                <div class="bill-warning"></div>
+            </label>
+            <label class="cash hidden">
+                Cash Given:
+                <input type="number" class="cash-input"/>
+            </label>
+            <button type="submit" class="btn hidden">Submit</button>
+            <div class="warning"></div>
+        </div>
+        <table class="balance hidden">
+            <tr class="notes">
+                <th>Notes:</th>
+                <th>₹2000</th>
+                <th>₹500</th>
+                <th>₹100</th>
+                <th>₹20</th>
+                <th>₹10</th>
+                <th>₹5</th>
+                <th>₹1</th>
+            </tr>
+            <tr class="result">
+                <td class="table">No. of Notes:</td>
+                <td class="two-thousand"> </td>
+                <td class="five-hundred"> </td>
+                <td class="hundred"> </td>
+                <td class="twenty"> </td>
+                <td class="ten"> </td>
+                <td class="five"> </td>
+                <td class="one"> </td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
